@@ -1,0 +1,12 @@
+#!/bin/bash
+mkdir /tmp/DATA
+
+echo "hoje o die e $(date +'%F %R')" > /tmp/DATA/DATA.txt
+
+cp ./* /tmp/DATA
+
+tar -cvf DATA.tar /tmp/data
+
+rm /tmp/DATA/*
+
+rmdir /tmp/DATA
